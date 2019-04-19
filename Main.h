@@ -7,6 +7,9 @@
 #include <fstream>
 #include <chrono>
 #include <vector>
+#include <math.h>
+#include <algorithm>
+#include <functional>
 
 using namespace std;
 
