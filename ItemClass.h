@@ -1,3 +1,6 @@
+#ifndef ItemClass_h
+#define ItemClass_h
+
 #include "Main.h"
 
 class Item
@@ -54,10 +57,11 @@ public:
 	//Friend Methods------------------------------------------------------------
 	
 	//Formats the data fields from the given Item object and sends them
-	//	to the output stream object
+	//to the output stream object
 	friend ostream& operator<<(ostream& out, const Item& item);
 	
 	//Destructor----------------------------------------------------------------
 	~Item(void);
 	
 }; // !Item
+#endif // !ItemClass_h

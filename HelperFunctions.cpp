@@ -6,7 +6,6 @@
 //      PrintCenteredMessage
 //		max
 //		InitializeLCSLenTable
-//		ParseBestFirstSearchInputLine
 //------------------------------------------------------------------------------
 
 #include "HelperFunctions.h"

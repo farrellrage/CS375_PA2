@@ -12,8 +12,8 @@ ItemClass.o:	ItemClass.cpp ItemClass.h Main.h
 HelperFunctions.o:	HelperFunctions.cpp HelperFunctions.h Main.h
 	g++ -g -Wall -c HelperFunctions.cpp
 	
-test1:
-	./task1 filex.txt filey.txt output1.txt
+test:
+	./BestFirstSearch input.txt output.txt
 
 clean:
 	-rm BestFirstSearch *.o

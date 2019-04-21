@@ -3,8 +3,6 @@
 #include "HelperFunctions.h"
 #include "BestFirstSearch.h"
 
-
-
 int main(int argc, char **argv)
 {
 	//Int to hold the number of items read from the input file
@@ -86,34 +84,11 @@ int main(int argc, char **argv)
 	{
 		return 1;
 	} // !else
-
-	
-	for (unsigned int i = 0; i < items.size(); i++)
-	{
-		items[i].Print();
-	}
 	
 	std::sort(items.begin(), items.end(), greater<Item>());
 	
-	for (unsigned int i = 0; i < items.size(); i++)
-	{
-		items[i].Print();
-	}
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
+	BestFirstSearchBrandBound(items, problemSize, capacity, fout);
+
 	//Close the input and output files
 	fin.close();
 	fout.close();
